@@ -1,6 +1,13 @@
 name: Kotlin CI
 
 on:
+  workflow_dispatch:
+    inputs:
+      branch_name:
+        description: '要构建的分支名称'
+        required: true
+        default: 'main'
+        type: string
   push:
     branches:
       - main
@@ -8,7 +15,7 @@ on:
       - dev
   pull_request_target:
     branches:
-      - dev
+      - dev - dev
 
 jobs:
   build:
@@ -18,6 +25,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
+        ref: ${{ github.event.inputs.branch_name }}
         fetch-depth: 0
         submodules: 'true'
     
