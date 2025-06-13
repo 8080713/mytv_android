@@ -12,7 +12,7 @@ plugins {
 
 android {
     signingConfigs {
-        register("release") {
+        getByName("release") {
             storeFile = file(System.getenv("STORE_FILE") ?: "release.keystore")
             storePassword = System.getenv("STORE_PASSWORD")
             keyAlias = System.getenv("KEY_ALIAS")
