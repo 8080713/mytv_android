@@ -1,0 +1,1914 @@
+public inline fun <reified T : Any> ExtensionContainer.create(name: String, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+public inline fun <T : Any> ExtensionContainer.create(name: String, type: KClass<TypeVariable(T)>, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+public inline fun <T : Any> ExtensionContainer.create(publicType: KClass<TypeVariable(T)>, name: String, instanceType: KClass<out TypeVariable(T)>, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+public inline fun <T : Any> ExtensionContainer.create(publicType: TypeOf<TypeVariable(T)>, name: String, instanceType: KClass<out TypeVariable(T)>, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+public inline fun TaskContainer.create(vararg options: Pair<String, Any?>): Task defined in org.gradle.kotlin.dsl
+public inline fun <reified T : Task> TaskContainer.create(name: String, vararg arguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<TypeVariable(T)>): TypeVariable(T) defined in org.gradle.kotlin.dsl
+public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<TypeVariable(T)>, vararg constructorArgs: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<TypeVariable(T)>, configuration: Action<in TypeVariable(T)>): TypeVariable(T) defined in org.gradle.kotlin.dsl
+public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
+public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>, configAction: Action<in TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
+public inline fun <T : Task> BinaryTasksCollection.create(name: String, type: KClass<TypeVariable(T)>, config: Action<in TypeVariable(T)>): Unit defined in org.gradle.kotlin.dsl
+e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:97:13: Unresolved reference: dimension
+e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:98:13: Unresolved reference: applicationId
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts' line: 26
+
+* What went wrong:
+Script compilation errors:
+
+  Line 026:     namespace = "top.yogiczy.mytv.tv"
+                ^ Unresolved reference: namespace
+
+  Line 027:     compileSdk = libs.versions.compileSdk.get().toInt()
+                ^ Unresolved reference: compileSdk
+
+  Line 029:     defaultConfig {
+                ^ Unresolved reference: defaultConfig
+
+  Line 030:         applicationId = "com.github.mytv.android"
+                    ^ Unresolved reference: applicationId
+
+  Line 031:         minSdk = libs.versions.minSdk.get().toInt()
+                    ^ Unresolved reference: minSdk
+
+  Line 032:         targetSdk = libs.versions.targetSdk.get().toInt()
+                    ^ Unresolved reference: targetSdk
+
+  Line 033:         versionCode = "${System.getenv("VERSION_CODE")}".toInt()
+                    ^ Unresolved reference: versionCode
+
+  Line 034:         versionName = "1.1.1.${System.getenv("VERSION_CODE")}"                                   
+                    ^ Unresolved reference: versionName
+
+  Line 035:         vectorDrawables {
+                    ^ Unresolved reference: vectorDrawables
+
+  Line 036:             useSupportLibrary = true
+                        ^ Unresolved reference: useSupportLibrary
+
+  Line 041:     buildTypes {
+                ^ Unresolved reference: buildTypes
+
+  Line 042:         release {
+                    ^ Expression 'release' cannot be invoked as a function. The function 'invoke()' is not found
+
+  Line 042:         release {
+                    ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+                        public val NamedDomainObjectContainer<KotlinSourceSet>.release: NamedDomainObjectProvider<KotlinSourceSet> defined in org.gradle.kotlin.dsl
+
+  Line 043:             isMinifyEnabled = true
+                        ^ Unresolved reference: isMinifyEnabled
+
+  Line 044:             isShrinkResources = true
+                        ^ Unresolved reference: isShrinkResources
+
+  Line 045:             proguardFiles(
+                        ^ Unresolved reference: proguardFiles
+
+  Line 046:                 getDefaultProguardFile("proguard-android-optimize.txt"),
+                            ^ Unresolved reference: getDefaultProguardFile
+
+  Line 049:             signingConfig = signingConfigs.getByName("release")
+                        ^ Unresolved reference: signingConfig
+
+  Line 049:             signingConfig = signingConfigs.getByName("release")
+                                        ^ Unresolved reference: signingConfigs
+
+  Line 051:         debug{
+                    ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+                        public inline fun CompileOptions.debug(vararg debugArgs: Pair<String, Any?>): CompileOptions defined in org.gradle.kotlin.dsl
+
+  Line 052:             isMinifyEnabled = false
+                        ^ Unresolved reference: isMinifyEnabled
+
+  Line 053:             proguardFiles(
+                        ^ Unresolved reference: proguardFiles
+
+  Line 054:                 getDefaultProguardFile("proguard-android-optimize.txt"),
+                            ^ Unresolved reference: getDefaultProguardFile
+
+  Line 057:             signingConfig = signingConfigs.getByName("release")
+                        ^ Unresolved reference: signingConfig
+
+  Line 057:             signingConfig = signingConfigs.getByName("release")
+                                        ^ Unresolved reference: signingConfigs
+
+  Line 060:     splits {
+                ^ Unresolved reference: splits
+
+  Line 061:         abi {
+                    ^ Unresolved reference: abi
+
+  Line 062:             isEnable = true
+                        ^ Unresolved reference: isEnable
+
+  Line 063:             reset()
+                        ^ Unresolved reference: reset
+
+  Line 064:             include("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+                        ^ Unresolved reference: include
+
+  Line 065:             isUniversalApk = true
+                        ^ Unresolved reference: isUniversalApk
+
+  Line 069:     compileOptions {
+                ^ Unresolved reference: compileOptions
+
+  Line 070:         isCoreLibraryDesugaringEnabled = true
+                    ^ Unresolved reference: isCoreLibraryDesugaringEnabled
+
+  Line 071:         sourceCompatibility = JavaVersion.VERSION_11
+                    ^ Unresolved reference: sourceCompatibility
+
+  Line 072:         targetCompatibility = JavaVersion.VERSION_11
+                    ^ Unresolved reference: targetCompatibility
+
+  Line 075:     kotlinOptions {
+                ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+                    public fun BaseAppModuleExtension.kotlinOptions(configure: Action<KotlinJvmOptions>): Unit defined in org.gradle.kotlin.dsl
+
+  Line 079:     buildFeatures {
+                ^ Unresolved reference: buildFeatures
+
+  Line 080:         compose = true
+                    ^ Unresolved reference: compose
+
+  Line 081:         buildConfig = true
+                    ^ Unresolved reference: buildConfig
+
+  Line 084:     packaging {
+                ^ Unresolved reference: packaging
+
+  Line 085:         resources {
+                    ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+                        public inline operator fun <T : Any, C : NamedDomainObjectContainer<TypeVariable(T)>> TypeVariable(C).invoke(configuration: Action<NamedDomainObjectContainerScope<TypeVariable(T)>>): TypeVariable(C) defined in org.gradle.kotlin.dsl
+                        public operator fun <T> Closure<TypeVariable(T)>.invoke(): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public operator fun <T> Closure<TypeVariable(T)>.invoke(x: Any?): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public operator fun <T> Closure<TypeVariable(T)>.invoke(vararg xs: Any?): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public operator fun <V> Callable<TypeVariable(V)>.invoke(): TypeVariable(V) defined in org.gradle.kotlin.dsl
+                        public operator fun <T, R> DeepRecursiveFunction<TypeVariable(T), TypeVariable(R)>.invoke(value: TypeVariable(T)): TypeVariable(R) defined in kotlin
+                        public operator fun <T> Action<in TypeVariable(T)>.invoke(target: TypeVariable(T)): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun <T> NamedDomainObjectProvider<TypeVariable(T)>.invoke(action: TypeVariable(T).() -> Unit): Unit defined in org.gradle.kotlin.dsl
+                        public inline operator fun ConfigurationContainer.invoke(configuration: Action<ConfigurationContainerScope>): ConfigurationContainer defined in org.gradle.kotlin.dsl
+                        public operator fun ArtifactHandler.invoke(configuration: ArtifactHandlerScope.() -> Unit): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun <D : Dependency> DependencyCollector.invoke(dependency: TypeVariable(D), configuration: Action<in TypeVariable(D)>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(dependencyNotation: CharSequence): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(dependencyNotation: CharSequence, configuration: Action<in ExternalModuleDependency>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(dependency: Dependency): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(dependencyConstraint: DependencyConstraint): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(dependencyConstraint: DependencyConstraint, configuration: Action<in DependencyConstraint>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(files: FileCollection): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(files: FileCollection, configuration: Action<in FileCollectionDependency>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun <D : Dependency> DependencyCollector.invoke(dependency: Provider<out TypeVariable(D)>, configuration: Action<in TypeVariable(D)>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(dependency: Provider<out Dependency>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(dependencyConstraint: Provider<out DependencyConstraint>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(dependencyConstraint: Provider<out DependencyConstraint>, configuration: Action<in DependencyConstraint>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(externalModule: ProviderConvertible<out MinimalExternalModuleDependency>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyCollector.invoke(externalModule: ProviderConvertible<out MinimalExternalModuleDependency>, configuration: Action<in ExternalModuleDependency>): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyConstraintHandler.invoke(configuration: DependencyConstraintHandlerScope.() -> Unit): Unit defined in org.gradle.kotlin.dsl
+                        public operator fun <D : ModuleDependency> DependencyModifier.invoke(dependency: TypeVariable(D)): TypeVariable(D) defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyModifier.invoke(dependencyNotation: CharSequence): ExternalModuleDependency defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyModifier.invoke(dependency: Provider<out ModuleDependency>): Provider<out ModuleDependency> defined in org.gradle.kotlin.dsl
+                        public operator fun DependencyModifier.invoke(dependency: ProviderConvertible<out MinimalExternalModuleDependency>): Provider<out MinimalExternalModuleDependency> defined in org.gradle.kotlin.dsl
+                        public inline operator fun <T> ExtraPropertiesExtension.invoke(initialValueProvider: () -> TypeVariable(T)): InitialValueExtraPropertyDelegateProvider<TypeVariable(T)> defined in org.gradle.kotlin.dsl
+                        public operator fun <T> ExtraPropertiesExtension.invoke(initialValue: TypeVariable(T)): InitialValueExtraPropertyDelegateProvider<TypeVariable(T)> defined in org.gradle.kotlin.dsl
+                        public operator fun <T> Spec<TypeVariable(T)>.invoke(arg: TypeVariable(T)): Boolean defined in org.gradle.kotlin.dsl
+                        public inline operator fun TaskContainer.invoke(configuration: TaskContainerScope.() -> Unit): TaskContainer defined in org.gradle.kotlin.dsl
+
+  Line 086:             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+                        ^ Unresolved reference: excludes
+
+  Line 086:             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+                                 ^ Unresolved reference: +=
+
+  Line 090:     flavorDimensions += listOf("version")
+                ^ Unresolved reference: flavorDimensions
+
+  Line 090:     flavorDimensions += listOf("version")
+                                 ^ Unresolved reference: +=
+
+  Line 091:     productFlavors {
+                ^ Unresolved reference: productFlavors
+
+  Line 092:         create("original") {
+                    ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+                        public inline fun <U : TypeVariable(T), T : Any> PolymorphicDomainObjectContainer<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(U)>): TypeVariable(U) defined in org.gradle.kotlin.dsl
+                        public inline fun <U : TypeVariable(T), T : Any> PolymorphicDomainObjectContainer<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(U)>, configuration: Action<in TypeVariable(U)>): TypeVariable(U) defined in org.gradle.kotlin.dsl
+                        public inline fun <reified U : Any> PolymorphicDomainObjectContainer<in TypeVariable(U)>.create(name: String): TypeVariable(U) defined in org.gradle.kotlin.dsl
+                        public inline fun <reified U : Any> PolymorphicDomainObjectContainer<in TypeVariable(U)>.create(name: String, noinline configuration: TypeVariable(U).() -> Unit): TypeVariable(U) defined in org.gradle.kotlin.dsl
+                        public fun DependencyHandler.create(group: String, name: String, version: String? = ..., configuration: String? = ..., classifier: String? = ..., ext: String? = ...): ExternalModuleDependency defined in org.gradle.kotlin.dsl
+                        public inline fun DependencyHandler.create(dependencyNotation: String, dependencyConfiguration: ExternalModuleDependency.() -> Unit): ExternalModuleDependency defined in org.gradle.kotlin.dsl
+                        public inline fun <reified T : Any> ExtensionContainer.create(name: String, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Any> ExtensionContainer.create(name: String, type: KClass<TypeVariable(T)>, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Any> ExtensionContainer.create(publicType: KClass<TypeVariable(T)>, name: String, instanceType: KClass<out TypeVariable(T)>, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Any> ExtensionContainer.create(publicType: TypeOf<TypeVariable(T)>, name: String, instanceType: KClass<out TypeVariable(T)>, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun TaskContainer.create(vararg options: Pair<String, Any?>): Task defined in org.gradle.kotlin.dsl
+                        public inline fun <reified T : Task> TaskContainer.create(name: String, vararg arguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<TypeVariable(T)>): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<TypeVariable(T)>, vararg constructorArgs: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<TypeVariable(T)>, configuration: Action<in TypeVariable(T)>): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
+                        public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>, configAction: Action<in TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Task> BinaryTasksCollection.create(name: String, type: KClass<TypeVariable(T)>, config: Action<in TypeVariable(T)>): Unit defined in org.gradle.kotlin.dsl
+
+  Line 093:             dimension = "version"
+                        ^ Unresolved reference: dimension
+
+  Line 096:         create("disguised") {
+                    ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+                        public inline fun <U : TypeVariable(T), T : Any> PolymorphicDomainObjectContainer<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(U)>): TypeVariable(U) defined in org.gradle.kotlin.dsl
+                        public inline fun <U : TypeVariable(T), T : Any> PolymorphicDomainObjectContainer<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(U)>, configuration: Action<in TypeVariable(U)>): TypeVariable(U) defined in org.gradle.kotlin.dsl
+                        public inline fun <reified U : Any> PolymorphicDomainObjectContainer<in TypeVariable(U)>.create(name: String): TypeVariable(U) defined in org.gradle.kotlin.dsl
+                        public inline fun <reified U : Any> PolymorphicDomainObjectContainer<in TypeVariable(U)>.create(name: String, noinline configuration: TypeVariable(U).() -> Unit): TypeVariable(U) defined in org.gradle.kotlin.dsl
+                        public fun DependencyHandler.create(group: String, name: String, version: String? = ..., configuration: String? = ..., classifier: String? = ..., ext: String? = ...): ExternalModuleDependency defined in org.gradle.kotlin.dsl
+                        public inline fun DependencyHandler.create(dependencyNotation: String, dependencyConfiguration: ExternalModuleDependency.() -> Unit): ExternalModuleDependency defined in org.gradle.kotlin.dsl
+                        public inline fun <reified T : Any> ExtensionContainer.create(name: String, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Any> ExtensionContainer.create(name: String, type: KClass<TypeVariable(T)>, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Any> ExtensionContainer.create(publicType: KClass<TypeVariable(T)>, name: String, instanceType: KClass<out TypeVariable(T)>, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Any> ExtensionContainer.create(publicType: TypeOf<TypeVariable(T)>, name: String, instanceType: KClass<out TypeVariable(T)>, vararg constructionArguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun TaskContainer.create(vararg options: Pair<String, Any?>): Task defined in org.gradle.kotlin.dsl
+                        public inline fun <reified T : Task> TaskContainer.create(name: String, vararg arguments: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<TypeVariable(T)>): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<TypeVariable(T)>, vararg constructorArgs: Any): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<TypeVariable(T)>, configuration: Action<in TypeVariable(T)>): TypeVariable(T) defined in org.gradle.kotlin.dsl
+                        public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
+                        public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>, configAction: Action<in TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
+                        public inline fun <T : Task> BinaryTasksCollection.create(name: String, type: KClass<TypeVariable(T)>, config: Action<in TypeVariable(T)>): Unit defined in org.gradle.kotlin.dsl
+
+  Line 097:             dimension = "version"
+                        ^ Unresolved reference: dimension
+
+  Line 098:             applicationId = "com.chinablue.tv"
+                        ^ Unresolved reference: applicationId
+
+  Line 102: }
+            ^ Unexpected symbol
+
+  Line 104: dependencies {
+            ^ Unexpected symbol
+
+  Line 104: dependencies {
+                         ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                              ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                               ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                                   ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                                    ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                                            ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                                             ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                                                 ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                                                  ^ Unexpected symbol
+
+  Line 105:     implementation(libs.androidx.core.ktx)
+                                                     ^ Unexpected symbol
+
+  Line 106:     implementation(libs.androidx.appcompat)
+                ^ Unexpected symbol
+
+  Line 106:     implementation(libs.androidx.appcompat)
+                              ^ Unexpected symbol
+
+  Line 106:     implementation(libs.androidx.appcompat)
+                               ^ Unexpected symbol
+
+  Line 106:     implementation(libs.androidx.appcompat)
+                                   ^ Unexpected symbol
+
+  Line 106:     implementation(libs.androidx.appcompat)
+                                    ^ Unexpected symbol
+
+  Line 106:     implementation(libs.androidx.appcompat)
+                                            ^ Unexpected symbol
+
+  Line 106:     implementation(libs.androidx.appcompat)
+                                             ^ Unexpected symbol
+
+  Line 106:     implementation(libs.androidx.appcompat)
+                                                      ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                              ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                               ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                       ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                        ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                            ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                             ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                                     ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                                      ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                                             ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                                              ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                                                 ^ Unexpected symbol
+
+  Line 107:     implementation(platform(libs.androidx.compose.bom))
+                                                                  ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                              ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                               ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                                   ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                                    ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                                            ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                                             ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                                               ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                                                ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                                                       ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                                                        ^ Unexpected symbol
+
+  Line 108:     implementation(libs.androidx.ui.tooling.preview)
+                                                               ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                              ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                               ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                                   ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                                    ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                                            ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                                             ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                                                    ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                                                     ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                                                               ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                                                                ^ Unexpected symbol
+
+  Line 109:     implementation(libs.androidx.compose.foundation.base)
+                                                                    ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                              ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                               ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                                   ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                                    ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                                            ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                                             ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                                               ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                                                ^ Unexpected symbol
+
+  Line 110:     implementation(libs.androidx.tv.material)
+                                                        ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                              ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                               ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                                   ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                                    ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                                            ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                                             ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                                                      ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                                                       ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                                                              ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                                                               ^ Unexpected symbol
+
+  Line 111:     implementation(libs.androidx.lifecycle.runtime.ktx)
+                                                                  ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                              ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                               ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                                   ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                                    ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                                            ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                                             ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                                                      ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                                                       ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                                                                ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                                                                 ^ Unexpected symbol
+
+  Line 112:     implementation(libs.androidx.lifecycle.viewmodel.compose)
+                                                                        ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                              ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                               ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                                   ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                                    ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                                            ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                                             ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                                                     ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                                                      ^ Unexpected symbol
+
+  Line 113:     implementation(libs.androidx.activity.compose)
+                                                             ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                              ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                               ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                                   ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                                    ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                                            ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                                             ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                                                       ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                                                        ^ Unexpected symbol
+
+  Line 114:     implementation(libs.androidx.navigation.compose)
+                                                               ^ Unexpected symbol
+
+  Line 115:     implementation(libs.android.material)
+                ^ Unexpected symbol
+
+  Line 115:     implementation(libs.android.material)
+                              ^ Unexpected symbol
+
+  Line 115:     implementation(libs.android.material)
+                               ^ Unexpected symbol
+
+  Line 115:     implementation(libs.android.material)
+                                   ^ Unexpected symbol
+
+  Line 115:     implementation(libs.android.material)
+                                    ^ Unexpected symbol
+
+  Line 115:     implementation(libs.android.material)
+                                           ^ Unexpected symbol
+
+  Line 115:     implementation(libs.android.material)
+                                            ^ Unexpected symbol
+
+  Line 115:     implementation(libs.android.material)
+                                                    ^ Unexpected symbol
+
+  Line 116:     implementation(libs.kotlinx.serialization)
+                ^ Unexpected symbol
+
+  Line 116:     implementation(libs.kotlinx.serialization)
+                              ^ Unexpected symbol
+
+  Line 116:     implementation(libs.kotlinx.serialization)
+                               ^ Unexpected symbol
+
+  Line 116:     implementation(libs.kotlinx.serialization)
+                                   ^ Unexpected symbol
+
+  Line 116:     implementation(libs.kotlinx.serialization)
+                                    ^ Unexpected symbol
+
+  Line 116:     implementation(libs.kotlinx.serialization)
+                                           ^ Unexpected symbol
+
+  Line 116:     implementation(libs.kotlinx.serialization)
+                                            ^ Unexpected symbol
+
+  Line 116:     implementation(libs.kotlinx.serialization)
+                                                         ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                              ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                               ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                                   ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                                    ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                                           ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                                            ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                                                       ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                                                        ^ Unexpected symbol
+
+  Line 117:     implementation(libs.kotlinx.collections.immutable)
+                                                                 ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                              ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                               ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                                   ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                                    ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                                            ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                                             ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                                                     ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                                                      ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                                                           ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                                                            ^ Unexpected symbol
+
+  Line 118:     implementation(libs.androidx.material.icons.extended)
+                                                                    ^ Unexpected symbol
+
+  Line 121:     val mediaSettingsFile = file("../../media/core_settings.gradle")
+                ^ Unexpected symbol
+
+  Line 121:     val mediaSettingsFile = file("../../media/core_settings.gradle")
+                    ^ Unexpected symbol
+
+  Line 121:     val mediaSettingsFile = file("../../media/core_settings.gradle")
+                                      ^ Unexpected symbol
+
+  Line 121:     val mediaSettingsFile = file("../../media/core_settings.gradle")
+                                        ^ Unexpected symbol
+
+  Line 121:     val mediaSettingsFile = file("../../media/core_settings.gradle")
+                                            ^ Unexpected symbol
+
+  Line 121:     val mediaSettingsFile = file("../../media/core_settings.gradle")
+                                             ^ Unexpected symbol
+
+  Line 121:     val mediaSettingsFile = file("../../media/core_settings.gradle")
+                                              ^ Unexpected symbol
+
+  Line 121:     val mediaSettingsFile = file("../../media/core_settings.gradle")
+                                                                              ^ Unexpected symbol
+
+  Line 121:     val mediaSettingsFile = file("../../media/core_settings.gradle")
+                                                                               ^ Unexpected symbol
+
+  Line 122:     if (mediaSettingsFile.exists()) {
+                ^ Unexpected symbol
+
+  Line 122:     if (mediaSettingsFile.exists()) {
+                   ^ Unexpected symbol
+
+  Line 122:     if (mediaSettingsFile.exists()) {
+                    ^ Unexpected symbol
+
+  Line 122:     if (mediaSettingsFile.exists()) {
+                                     ^ Unexpected symbol
+
+  Line 122:     if (mediaSettingsFile.exists()) {
+                                      ^ Unexpected symbol
+
+  Line 122:     if (mediaSettingsFile.exists()) {
+                                            ^ Unexpected symbol
+
+  Line 122:     if (mediaSettingsFile.exists()) {
+                                             ^ Unexpected symbol
+
+  Line 122:     if (mediaSettingsFile.exists()) {
+                                              ^ Unexpected symbol
+
+  Line 122:     if (mediaSettingsFile.exists()) {
+                                                ^ Unexpected symbol
+
+  Line 123:         implementation(project(":media3:lib-exoplayer"))
+                    ^ Unexpected symbol
+
+  Line 123:         implementation(project(":media3:lib-exoplayer"))
+                                  ^ Unexpected symbol
+
+  Line 123:         implementation(project(":media3:lib-exoplayer"))
+                                   ^ Unexpected symbol
+
+  Line 123:         implementation(project(":media3:lib-exoplayer"))
+                                          ^ Unexpected symbol
+
+  Line 123:         implementation(project(":media3:lib-exoplayer"))
+                                           ^ Unexpected symbol
+
+  Line 123:         implementation(project(":media3:lib-exoplayer"))
+                                            ^ Unexpected symbol
+
+  Line 123:         implementation(project(":media3:lib-exoplayer"))
+                                                                 ^ Unexpected symbol
+
+  Line 123:         implementation(project(":media3:lib-exoplayer"))
+                                                                  ^ Unexpected symbol
+
+  Line 123:         implementation(project(":media3:lib-exoplayer"))
+                                                                   ^ Unexpected symbol
+
+  Line 124:         implementation(project(":media3:lib-exoplayer-hls"))
+                    ^ Unexpected symbol
+
+  Line 124:         implementation(project(":media3:lib-exoplayer-hls"))
+                                  ^ Unexpected symbol
+
+  Line 124:         implementation(project(":media3:lib-exoplayer-hls"))
+                                   ^ Unexpected symbol
+
+  Line 124:         implementation(project(":media3:lib-exoplayer-hls"))
+                                          ^ Unexpected symbol
+
+  Line 124:         implementation(project(":media3:lib-exoplayer-hls"))
+                                           ^ Unexpected symbol
+
+  Line 124:         implementation(project(":media3:lib-exoplayer-hls"))
+                                            ^ Unexpected symbol
+
+  Line 124:         implementation(project(":media3:lib-exoplayer-hls"))
+                                                                     ^ Unexpected symbol
+
+  Line 124:         implementation(project(":media3:lib-exoplayer-hls"))
+                                                                      ^ Unexpected symbol
+
+  Line 124:         implementation(project(":media3:lib-exoplayer-hls"))
+                                                                       ^ Unexpected symbol
+
+  Line 125:         implementation(project(":media3:lib-exoplayer-rtsp"))
+                    ^ Unexpected symbol
+
+  Line 125:         implementation(project(":media3:lib-exoplayer-rtsp"))
+                                  ^ Unexpected symbol
+
+  Line 125:         implementation(project(":media3:lib-exoplayer-rtsp"))
+                                   ^ Unexpected symbol
+
+  Line 125:         implementation(project(":media3:lib-exoplayer-rtsp"))
+                                          ^ Unexpected symbol
+
+  Line 125:         implementation(project(":media3:lib-exoplayer-rtsp"))
+                                           ^ Unexpected symbol
+
+  Line 125:         implementation(project(":media3:lib-exoplayer-rtsp"))
+                                            ^ Unexpected symbol
+
+  Line 125:         implementation(project(":media3:lib-exoplayer-rtsp"))
+                                                                      ^ Unexpected symbol
+
+  Line 125:         implementation(project(":media3:lib-exoplayer-rtsp"))
+                                                                       ^ Unexpected symbol
+
+  Line 125:         implementation(project(":media3:lib-exoplayer-rtsp"))
+                                                                        ^ Unexpected symbol
+
+  Line 126:         implementation(project(":media3:lib-exoplayer-dash"))
+                    ^ Unexpected symbol
+
+  Line 126:         implementation(project(":media3:lib-exoplayer-dash"))
+                                  ^ Unexpected symbol
+
+  Line 126:         implementation(project(":media3:lib-exoplayer-dash"))
+                                   ^ Unexpected symbol
+
+  Line 126:         implementation(project(":media3:lib-exoplayer-dash"))
+                                          ^ Unexpected symbol
+
+  Line 126:         implementation(project(":media3:lib-exoplayer-dash"))
+                                           ^ Unexpected symbol
+
+  Line 126:         implementation(project(":media3:lib-exoplayer-dash"))
+                                            ^ Unexpected symbol
+
+  Line 126:         implementation(project(":media3:lib-exoplayer-dash"))
+                                                                      ^ Unexpected symbol
+
+  Line 126:         implementation(project(":media3:lib-exoplayer-dash"))
+                                                                       ^ Unexpected symbol
+
+  Line 126:         implementation(project(":media3:lib-exoplayer-dash"))
+                                                                        ^ Unexpected symbol
+
+  Line 127:         implementation(project(":media3:lib-ui"))
+                    ^ Unexpected symbol
+
+  Line 127:         implementation(project(":media3:lib-ui"))
+                                  ^ Unexpected symbol
+
+  Line 127:         implementation(project(":media3:lib-ui"))
+                                   ^ Unexpected symbol
+
+  Line 127:         implementation(project(":media3:lib-ui"))
+                                          ^ Unexpected symbol
+
+  Line 127:         implementation(project(":media3:lib-ui"))
+                                           ^ Unexpected symbol
+
+  Line 127:         implementation(project(":media3:lib-ui"))
+                                            ^ Unexpected symbol
+
+  Line 127:         implementation(project(":media3:lib-ui"))
+                                                          ^ Unexpected symbol
+
+  Line 127:         implementation(project(":media3:lib-ui"))
+                                                           ^ Unexpected symbol
+
+  Line 127:         implementation(project(":media3:lib-ui"))
+                                                            ^ Unexpected symbol
+
+  Line 128:     } else {
+                ^ Unexpected symbol
+
+  Line 128:     } else {
+                  ^ Unexpected symbol
+
+  Line 128:     } else {
+                       ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                    ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                                  ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                                   ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                                       ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                                        ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                                                ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                                                 ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                                                       ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                                                        ^ Unexpected symbol
+
+  Line 129:         implementation(libs.androidx.media3.exoplayer)
+                                                                 ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                    ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                  ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                   ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                       ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                        ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                                ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                                 ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                                       ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                                        ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                                                 ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                                                  ^ Unexpected symbol
+
+  Line 130:         implementation(libs.androidx.media3.exoplayer.hls)
+                                                                     ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                    ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                  ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                   ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                       ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                        ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                                ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                                 ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                                       ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                                        ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                                                 ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                                                  ^ Unexpected symbol
+
+  Line 131:         implementation(libs.androidx.media3.exoplayer.rtsp)
+                                                                      ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                    ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                  ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                   ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                       ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                        ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                                ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                                 ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                                       ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                                        ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                                                 ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                                                  ^ Unexpected symbol
+
+  Line 132:         implementation(libs.androidx.media3.exoplayer.dash)
+                                                                      ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                    ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                                  ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                                   ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                                       ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                                        ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                                                ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                                                 ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                                                       ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                                                        ^ Unexpected symbol
+
+  Line 133:         implementation(libs.androidx.media3.ui)
+                                                          ^ Unexpected symbol
+
+  Line 134:     }
+                ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                              ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                               ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                                   ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                                    ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                                            ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                                             ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                                                   ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                                                    ^ Unexpected symbol
+
+  Line 135:     implementation(libs.androidx.media3.common)
+                                                          ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                              ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                               ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                                   ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                                    ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                                            ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                                             ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                                                   ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                                                    ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                                                              ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                                                               ^ Unexpected symbol
+
+  Line 136:     implementation(libs.androidx.media3.datasource.rtmp)
+                                                                   ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                              ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                               ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                                   ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                                    ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                                            ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                                             ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                                                   ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                                                    ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                                                             ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                                                              ^ Unexpected symbol
+
+  Line 137:     implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+                                                                             ^ Unexpected symbol
+
+  Line 140:     implementation(libs.qrose)
+                ^ Unexpected symbol
+
+  Line 140:     implementation(libs.qrose)
+                              ^ Unexpected symbol
+
+  Line 140:     implementation(libs.qrose)
+                               ^ Unexpected symbol
+
+  Line 140:     implementation(libs.qrose)
+                                   ^ Unexpected symbol
+
+  Line 140:     implementation(libs.qrose)
+                                    ^ Unexpected symbol
+
+  Line 140:     implementation(libs.qrose)
+                                         ^ Unexpected symbol
+
+  Line 142:     implementation(libs.coil.compose)
+                ^ Unexpected symbol
+
+  Line 142:     implementation(libs.coil.compose)
+                              ^ Unexpected symbol
+
+  Line 142:     implementation(libs.coil.compose)
+                               ^ Unexpected symbol
+
+  Line 142:     implementation(libs.coil.compose)
+                                   ^ Unexpected symbol
+
+  Line 142:     implementation(libs.coil.compose)
+                                    ^ Unexpected symbol
+
+  Line 142:     implementation(libs.coil.compose)
+                                        ^ Unexpected symbol
+
+  Line 142:     implementation(libs.coil.compose)
+                                         ^ Unexpected symbol
+
+  Line 142:     implementation(libs.coil.compose)
+                                                ^ Unexpected symbol
+
+  Line 143:     implementation(libs.coil.svg)
+                ^ Unexpected symbol
+
+  Line 143:     implementation(libs.coil.svg)
+                              ^ Unexpected symbol
+
+  Line 143:     implementation(libs.coil.svg)
+                               ^ Unexpected symbol
+
+  Line 143:     implementation(libs.coil.svg)
+                                   ^ Unexpected symbol
+
+  Line 143:     implementation(libs.coil.svg)
+                                    ^ Unexpected symbol
+
+  Line 143:     implementation(libs.coil.svg)
+                                        ^ Unexpected symbol
+
+  Line 143:     implementation(libs.coil.svg)
+                                         ^ Unexpected symbol
+
+  Line 143:     implementation(libs.coil.svg)
+                                            ^ Unexpected symbol
+
+  Line 145:     implementation(libs.okhttp)
+                ^ Unexpected symbol
+
+  Line 145:     implementation(libs.okhttp)
+                              ^ Unexpected symbol
+
+  Line 145:     implementation(libs.okhttp)
+                               ^ Unexpected symbol
+
+  Line 145:     implementation(libs.okhttp)
+                                   ^ Unexpected symbol
+
+  Line 145:     implementation(libs.okhttp)
+                                    ^ Unexpected symbol
+
+  Line 145:     implementation(libs.okhttp)
+                                          ^ Unexpected symbol
+
+  Line 146:     implementation(libs.androidasync)
+                ^ Unexpected symbol
+
+  Line 146:     implementation(libs.androidasync)
+                              ^ Unexpected symbol
+
+  Line 146:     implementation(libs.androidasync)
+                               ^ Unexpected symbol
+
+  Line 146:     implementation(libs.androidasync)
+                                   ^ Unexpected symbol
+
+  Line 146:     implementation(libs.androidasync)
+                                    ^ Unexpected symbol
+
+  Line 146:     implementation(libs.androidasync)
+                                                ^ Unexpected symbol
+
+  Line 148:     implementation(libs.tinypinyin)
+                ^ Unexpected symbol
+
+  Line 148:     implementation(libs.tinypinyin)
+                              ^ Unexpected symbol
+
+  Line 148:     implementation(libs.tinypinyin)
+                               ^ Unexpected symbol
+
+  Line 148:     implementation(libs.tinypinyin)
+                                   ^ Unexpected symbol
+
+  Line 148:     implementation(libs.tinypinyin)
+                                    ^ Unexpected symbol
+
+  Line 148:     implementation(libs.tinypinyin)
+                                              ^ Unexpected symbol
+
+  Line 150:     implementation(project(":core:data"))
+                ^ Unexpected symbol
+
+  Line 150:     implementation(project(":core:data"))
+                              ^ Unexpected symbol
+
+  Line 150:     implementation(project(":core:data"))
+                               ^ Unexpected symbol
+
+  Line 150:     implementation(project(":core:data"))
+                                      ^ Unexpected symbol
+
+  Line 150:     implementation(project(":core:data"))
+                                       ^ Unexpected symbol
+
+  Line 150:     implementation(project(":core:data"))
+                                        ^ Unexpected symbol
+
+  Line 150:     implementation(project(":core:data"))
+                                                  ^ Unexpected symbol
+
+  Line 150:     implementation(project(":core:data"))
+                                                   ^ Unexpected symbol
+
+  Line 150:     implementation(project(":core:data"))
+                                                    ^ Unexpected symbol
+
+  Line 151:     implementation(project(":core:designsystem"))
+                ^ Unexpected symbol
+
+  Line 151:     implementation(project(":core:designsystem"))
+                              ^ Unexpected symbol
+
+  Line 151:     implementation(project(":core:designsystem"))
+                               ^ Unexpected symbol
+
+  Line 151:     implementation(project(":core:designsystem"))
+                                      ^ Unexpected symbol
+
+  Line 151:     implementation(project(":core:designsystem"))
+                                       ^ Unexpected symbol
+
+  Line 151:     implementation(project(":core:designsystem"))
+                                        ^ Unexpected symbol
+
+  Line 151:     implementation(project(":core:designsystem"))
+                                                          ^ Unexpected symbol
+
+  Line 151:     implementation(project(":core:designsystem"))
+                                                           ^ Unexpected symbol
+
+  Line 151:     implementation(project(":core:designsystem"))
+                                                            ^ Unexpected symbol
+
+  Line 152:     implementation(project(":core:util"))
+                ^ Unexpected symbol
+
+  Line 152:     implementation(project(":core:util"))
+                              ^ Unexpected symbol
+
+  Line 152:     implementation(project(":core:util"))
+                               ^ Unexpected symbol
+
+  Line 152:     implementation(project(":core:util"))
+                                      ^ Unexpected symbol
+
+  Line 152:     implementation(project(":core:util"))
+                                       ^ Unexpected symbol
+
+  Line 152:     implementation(project(":core:util"))
+                                        ^ Unexpected symbol
+
+  Line 152:     implementation(project(":core:util"))
+                                                  ^ Unexpected symbol
+
+  Line 152:     implementation(project(":core:util"))
+                                                   ^ Unexpected symbol
+
+  Line 152:     implementation(project(":core:util"))
+                                                    ^ Unexpected symbol
+
+  Line 153:     implementation(project(":ijkplayer-java"))
+                ^ Unexpected symbol
+
+  Line 153:     implementation(project(":ijkplayer-java"))
+                              ^ Unexpected symbol
+
+  Line 153:     implementation(project(":ijkplayer-java"))
+                               ^ Unexpected symbol
+
+  Line 153:     implementation(project(":ijkplayer-java"))
+                                      ^ Unexpected symbol
+
+  Line 153:     implementation(project(":ijkplayer-java"))
+                                       ^ Unexpected symbol
+
+  Line 153:     implementation(project(":ijkplayer-java"))
+                                        ^ Unexpected symbol
+
+  Line 153:     implementation(project(":ijkplayer-java"))
+                                                       ^ Unexpected symbol
+
+  Line 153:     implementation(project(":ijkplayer-java"))
+                                                        ^ Unexpected symbol
+
+  Line 153:     implementation(project(":ijkplayer-java"))
+                                                         ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                              ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                               ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                       ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                        ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                             ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                              ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                               ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                  ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                    ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                       ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                        ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                            ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                             ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                               ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                       ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                         ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                            ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                                  ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                                   ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                                    ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                                         ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                                          ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                                           ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                                            ^ Unexpected symbol
+
+  Line 154:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+                                                                                             ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                              ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                               ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                       ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                        ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                             ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                              ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                               ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                  ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                    ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                       ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                        ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                            ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                             ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                               ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                       ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                         ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                            ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                                  ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                                   ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                                    ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                                         ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                                          ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                                           ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                                            ^ Unexpected symbol
+
+  Line 155:     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+                                                                                             ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                         ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                          ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                  ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                   ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                       ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                        ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                                ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                                 ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                                        ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                                         ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                                            ^ Unexpected symbol
+
+  Line 156:     androidTestImplementation(platform(libs.androidx.compose.bom))
+                                                                             ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                         ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                          ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                              ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                               ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                                       ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                                        ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                                          ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                                           ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                                               ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                                                ^ Unexpected symbol
+
+  Line 157:     androidTestImplementation(libs.androidx.ui.test.junit4)
+                                                                      ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                                   ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                                    ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                                        ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                                         ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                                                 ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                                                  ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                                                    ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                                                     ^ Unexpected symbol
+
+  Line 158:     debugImplementation(libs.androidx.ui.tooling)
+                                                            ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                   ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                    ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                        ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                         ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                                 ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                                  ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                                    ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                                     ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                                         ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                                          ^ Unexpected symbol
+
+  Line 159:     debugImplementation(libs.androidx.ui.test.manifest)
+                                                                  ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                                     ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                                      ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                                          ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                                           ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                                                  ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                                                   ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                                                      ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                                                       ^ Unexpected symbol
+
+  Line 160:     coreLibraryDesugaring(libs.desugar.jdk.libs)
+                                                           ^ Unexpected symbol
+
+  Line 161: }
+            ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+            ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                           ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                            ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                               ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                                 ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                                       ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                                        ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                                          ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                                                ^ Unexpected symbol
+
+  Line 164: fun getProperty(key: String): String? {
+                                                  ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                    ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                                   ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                                     ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                                                ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                                                 ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                                                     ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                                                      ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                                                       ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                                                                       ^ Unexpected symbol
+
+  Line 165:     val propertiesFile = rootProject.file("local.properties")
+                                                                        ^ Unexpected symbol
+
+  Line 166:     if (propertiesFile.exists()) {
+                ^ Unexpected symbol
+
+  Line 166:     if (propertiesFile.exists()) {
+                   ^ Unexpected symbol
+
+  Line 166:     if (propertiesFile.exists()) {
+                    ^ Unexpected symbol
+
+  Line 166:     if (propertiesFile.exists()) {
+                                  ^ Unexpected symbol
+
+  Line 166:     if (propertiesFile.exists()) {
+                                   ^ Unexpected symbol
+
+  Line 166:     if (propertiesFile.exists()) {
+                                         ^ Unexpected symbol
+
+  Line 166:     if (propertiesFile.exists()) {
+                                          ^ Unexpected symbol
+
+  Line 166:     if (propertiesFile.exists()) {
+                                           ^ Unexpected symbol
+
+  Line 166:     if (propertiesFile.exists()) {
+                                             ^ Unexpected symbol
+
+  Line 167:         val properties = Properties()
+                    ^ Unexpected symbol
+
+  Line 167:         val properties = Properties()
+                        ^ Unexpected symbol
+
+  Line 167:         val properties = Properties()
+                                   ^ Unexpected symbol
+
+  Line 167:         val properties = Properties()
+                                     ^ Unexpected symbol
+
+  Line 167:         val properties = Properties()
+                                               ^ Unexpected symbol
+
+  Line 167:         val properties = Properties()
+                                                ^ Unexpected symbol
+
+  Line 168:         properties.load(FileInputStream(propertiesFile))
+                    ^ Unexpected symbol
+
+  Line 168:         properties.load(FileInputStream(propertiesFile))
+                              ^ Unexpected symbol
+
+  Line 168:         properties.load(FileInputStream(propertiesFile))
+                               ^ Unexpected symbol
+
+  Line 168:         properties.load(FileInputStream(propertiesFile))
+                                   ^ Unexpected symbol
+
+  Line 168:         properties.load(FileInputStream(propertiesFile))
+                                    ^ Unexpected symbol
+
+  Line 168:         properties.load(FileInputStream(propertiesFile))
+                                                   ^ Unexpected symbol
+
+  Line 168:         properties.load(FileInputStream(propertiesFile))
+                                                    ^ Unexpected symbol
+
+  Line 168:         properties.load(FileInputStream(propertiesFile))
+                                                                  ^ Unexpected symbol
+
+  Line 168:         properties.load(FileInputStream(propertiesFile))
+                                                                   ^ Unexpected symbol
+
+  Line 170:         return properties.getProperty(key)
+                    ^ Unexpected symbol
+
+  Line 170:         return properties.getProperty(key)
+                           ^ Unexpected symbol
+
+  Line 170:         return properties.getProperty(key)
+                                     ^ Unexpected symbol
+
+  Line 170:         return properties.getProperty(key)
+                                      ^ Unexpected symbol
+
+  Line 170:         return properties.getProperty(key)
+                                                 ^ Unexpected symbol
+
+  Line 170:         return properties.getProperty(key)
+                                                  ^ Unexpected symbol
+
+  Line 170:         return properties.getProperty(key)
+                                                     ^ Unexpected symbol
+
+  Line 171:     }
+                ^ Unexpected symbol
+
+  Line 173:     return null
+                ^ Unexpected symbol
+
+  Line 173:     return null
+                       ^ Unexpected symbol
+
+  Line 174: }
+            ^ Unexpected symbol
+
+603 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 21s
+Error: Process completed with exit code 1.

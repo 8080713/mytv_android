@@ -3,10 +3,8 @@ import java.io.FileInputStream
 import java.util.Properties
 
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.compose)
-    alias(libs.plugins.kotlin.serialization)
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
 }
 
 
@@ -24,12 +22,12 @@ android {
     apply(extra["appConfig"] as BaseAppModuleExtension.() -> Unit)
 
     namespace = "top.yogiczy.mytv.tv"
-    compileSdk = libs.versions.compileSdk.get().toInt()
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.github.mytv.android"
-        minSdk = libs.versions.minSdk.get().toInt()
-        targetSdk = libs.versions.targetSdk.get().toInt()
+        minSdk = 21
+        targetSdk = 34
         versionCode = "${System.getenv("VERSION_CODE")}".toInt()
         versionName = "1.1.1.${System.getenv("VERSION_CODE")}"//.${System.getenv("COMMIT_HASH")}"
         vectorDrawables {
