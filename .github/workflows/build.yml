@@ -1,10 +1,10 @@
-name: Kotlin CI
+name: Build Android App
 
 on:
   workflow_dispatch:
     inputs:
       branch_name:
-        description: '要构建的分支名称'
+        description: 'Branch to build'
         required: true
         default: 'main'
         type: string
