@@ -12,13 +12,14 @@ plugins {
 
 android {
     signingConfigs {
-        getByName("release") {
+        create("release") {
             storeFile = file(System.getenv("STORE_FILE") ?: "release.keystore")
             storePassword = System.getenv("STORE_PASSWORD")
             keyAlias = System.getenv("KEY_ALIAS")
             keyPassword = System.getenv("KEY_PASSWORD")
         }
     }
+}
     @Suppress("UNCHECKED_CAST")
     apply(extra["appConfig"] as BaseAppModuleExtension.() -> Unit)
 
