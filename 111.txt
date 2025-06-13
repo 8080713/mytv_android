@@ -1,581 +1,24 @@
 Run ./gradlew :tv:assembleRelease
-  ./gradlew :tv:assembleRelease
-  shell: /usr/bin/bash -e {0}
-  env:
-    changelog: - fix: 修复Gradle配置及签名问题2 (31cc360)
-  - fix: 合并重复的versions定义 (44381fb)
-  - fix: 合并重复的versions定义 (80a13af)
-    JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.7-6/x64
-    JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.7-6/x64
-    short_sha: 31cc360
-    SENTRY_AUTH_TOKEN: 
-    SENTRY_DSN: 
-    VERSION_CODE: 8
 Downloading https://mirrors.cloud.tencent.com/gradle/gradle-8.11.1-bin.zip
 .............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+
 Welcome to Gradle 8.11.1!
+
 Here are the highlights of this release:
  - Parallel load and store for Configuration Cache
  - Java compilation errors at the end of the build output
  - Consolidated report for warnings and deprecations
+
 For more details see https://docs.gradle.org/8.11.1/release-notes.html
+
 Starting a Gradle Daemon (subsequent builds will be faster)
 Configuration on demand is an incubating feature.
+
 > Configure project :tv
 WARNING: The option setting 'android.disableResourceValidation=true' is experimental.
 The current default is 'false'.
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:100:1: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:102:1: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:102:14: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:103:42: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:104:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:104:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:104:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:104:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:104:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:104:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:104:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:104:43: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:42: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:43: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:50: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:51: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:54: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:105:55: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:36: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:106:52: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:42: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:52: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:53: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:107:57: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:36: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:108:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:43: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:51: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:52: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:109:55: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:43: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:53: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:54: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:110:61: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:42: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:43: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:111:50: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:112:52: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:113:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:113:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:113:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:113:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:113:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:113:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:113:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:113:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:114:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:114:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:114:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:114:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:114:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:114:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:114:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:114:46: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:115:54: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:42: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:43: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:48: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:49: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:116:57: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:119:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:119:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:119:27: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:119:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:119:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:119:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:119:35: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:119:67: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:119:68: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:120:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:120:8: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:120:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:120:26: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:120:27: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:120:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:120:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:120:35: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:120:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:121:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:121:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:121:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:121:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:121:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:121:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:121:54: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:121:55: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:121:56: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:122:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:122:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:122:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:122:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:122:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:122:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:122:58: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:122:59: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:122:60: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:123:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:123:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:123:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:123:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:123:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:123:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:123:59: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:123:60: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:123:61: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:124:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:124:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:124:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:124:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:124:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:124:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:124:59: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:124:60: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:124:61: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:125:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:125:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:125:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:125:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:125:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:125:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:125:47: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:125:48: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:125:49: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:126:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:126:7: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:126:12: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:127:54: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:54: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:55: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:128:58: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:54: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:55: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:129:59: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:54: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:55: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:130:59: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:131:47: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:132:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:40: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:133:47: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:40: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:51: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:52: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:134:56: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:40: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:50: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:51: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:135:66: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:138:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:138:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:138:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:138:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:138:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:138:30: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:140:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:140:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:140:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:140:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:140:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:140:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:140:30: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:140:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:141:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:141:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:141:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:141:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:141:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:141:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:141:30: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:141:33: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:143:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:143:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:143:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:143:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:143:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:143:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:144:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:144:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:144:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:144:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:144:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:144:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:146:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:146:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:146:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:146:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:146:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:146:35: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:148:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:148:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:148:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:148:27: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:148:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:148:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:148:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:148:40: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:148:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:149:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:149:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:149:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:149:27: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:149:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:149:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:149:47: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:149:48: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:149:49: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:150:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:150:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:150:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:150:27: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:150:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:150:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:150:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:150:40: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:150:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:151:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:151:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:151:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:151:27: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:151:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:151:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:151:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:151:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:151:46: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:35: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:36: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:49: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:50: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:52: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:53: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:60: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:62: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:65: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:71: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:72: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:73: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:78: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:79: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:80: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:81: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:152:82: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:35: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:36: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:49: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:50: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:52: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:53: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:60: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:62: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:65: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:71: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:72: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:73: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:78: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:79: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:80: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:81: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:153:82: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:30: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:40: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:53: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:54: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:61: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:62: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:65: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:154:66: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:30: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:35: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:36: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:45: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:47: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:48: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:52: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:53: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:155:59: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:30: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:42: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:156:49: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:30: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:42: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:46: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:47: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:157:55: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:26: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:27: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:40: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:43: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:158:48: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:159:1: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:1: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:16: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:17: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:22: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:28: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:29: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:162:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:26: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:42: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:43: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:44: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:60: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:163:61: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:164:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:164:8: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:164:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:164:23: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:164:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:164:30: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:164:31: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:164:32: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:164:34: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:165:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:165:13: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:165:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:165:26: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:165:36: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:165:37: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:166:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:166:19: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:166:20: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:166:24: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:166:25: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:166:40: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:166:41: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:166:55: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:166:56: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:168:9: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:168:16: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:168:26: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:168:27: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:168:38: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:168:39: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:168:42: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:169:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:171:5: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:171:12: Unexpected symbol
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:172:1: Unexpected symbol
+e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:100:47: Unexpected tokens (use ';' to separate expressions on the same line)
+e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:101:48: Unexpected tokens (use ';' to separate expressions on the same line)
 e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:24:5: Unresolved reference: namespace
 e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:25:5: Unresolved reference: compileSdk
 e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:27:5: Unresolved reference: defaultConfig
@@ -678,7 +121,7 @@ public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.creat
 public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>, configAction: Action<in TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
 public inline fun <T : Task> BinaryTasksCollection.create(name: String, type: KClass<TypeVariable(T)>, config: Action<in TypeVariable(T)>): Unit defined in org.gradle.kotlin.dsl
 e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:91:13: Unresolved reference: dimension
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:94:9: Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
+e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:93:9: Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
 public inline fun <U : TypeVariable(T), T : Any> PolymorphicDomainObjectContainer<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(U)>): TypeVariable(U) defined in org.gradle.kotlin.dsl
 public inline fun <U : TypeVariable(T), T : Any> PolymorphicDomainObjectContainer<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(U)>, configuration: Action<in TypeVariable(U)>): TypeVariable(U) defined in org.gradle.kotlin.dsl
 public inline fun <reified U : Any> PolymorphicDomainObjectContainer<in TypeVariable(U)>.create(name: String): TypeVariable(U) defined in org.gradle.kotlin.dsl
@@ -697,96 +140,140 @@ public inline fun <T : Task> TaskContainer.create(name: String, type: KClass<Typ
 public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
 public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>, configAction: Action<in TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
 public inline fun <T : Task> BinaryTasksCollection.create(name: String, type: KClass<TypeVariable(T)>, config: Action<in TypeVariable(T)>): Unit defined in org.gradle.kotlin.dsl
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:95:13: Unresolved reference: dimension
-e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:96:13: Unresolved reference: applicationId
+e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:94:13: Unresolved reference: dimension
+e: file:///home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts:95:13: Unresolved reference: applicationId
+
 FAILURE: Build failed with an exception.
+
 * Where:
 Build file '/home/runner/work/mytv_android/mytv_android/tv/build.gradle.kts' line: 24
+
 * What went wrong:
 Script compilation errors:
+
   Line 024:     namespace = "top.yogiczy.mytv.tv"
                 ^ Unresolved reference: namespace
+
   Line 025:     compileSdk = 34
                 ^ Unresolved reference: compileSdk
+
   Line 027:     defaultConfig {
                 ^ Unresolved reference: defaultConfig
+
   Line 028:         applicationId = "com.github.mytv.android"
                     ^ Unresolved reference: applicationId
+
   Line 029:         minSdk = 21
                     ^ Unresolved reference: minSdk
+
   Line 030:         targetSdk = 34
                     ^ Unresolved reference: targetSdk
+
   Line 031:         versionCode = "${System.getenv("VERSION_CODE")}".toInt()
                     ^ Unresolved reference: versionCode
+
   Line 032:         versionName = "1.1.1.${System.getenv("VERSION_CODE")}"                                   
                     ^ Unresolved reference: versionName
+
   Line 033:         vectorDrawables {
                     ^ Unresolved reference: vectorDrawables
+
   Line 034:             useSupportLibrary = true
                         ^ Unresolved reference: useSupportLibrary
+
   Line 039:     buildTypes {
                 ^ Unresolved reference: buildTypes
+
   Line 040:         release {
                     ^ Expression 'release' cannot be invoked as a function. The function 'invoke()' is not found
+
   Line 040:         release {
                     ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
                         public val NamedDomainObjectContainer<KotlinSourceSet>.release: NamedDomainObjectProvider<KotlinSourceSet> defined in org.gradle.kotlin.dsl
+
   Line 041:             isMinifyEnabled = true
                         ^ Unresolved reference: isMinifyEnabled
+
   Line 042:             isShrinkResources = true
                         ^ Unresolved reference: isShrinkResources
+
   Line 043:             proguardFiles(
                         ^ Unresolved reference: proguardFiles
+
   Line 044:                 getDefaultProguardFile("proguard-android-optimize.txt"),
                             ^ Unresolved reference: getDefaultProguardFile
+
   Line 047:             signingConfig = signingConfigs.getByName("release")
                         ^ Unresolved reference: signingConfig
+
   Line 047:             signingConfig = signingConfigs.getByName("release")
                                         ^ Unresolved reference: signingConfigs
+
   Line 049:         debug{
                     ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
                         public inline fun CompileOptions.debug(vararg debugArgs: Pair<String, Any?>): CompileOptions defined in org.gradle.kotlin.dsl
+
   Line 050:             isMinifyEnabled = false
                         ^ Unresolved reference: isMinifyEnabled
+
   Line 051:             proguardFiles(
                         ^ Unresolved reference: proguardFiles
+
   Line 052:                 getDefaultProguardFile("proguard-android-optimize.txt"),
                             ^ Unresolved reference: getDefaultProguardFile
+
   Line 055:             signingConfig = signingConfigs.getByName("release")
                         ^ Unresolved reference: signingConfig
+
   Line 055:             signingConfig = signingConfigs.getByName("release")
                                         ^ Unresolved reference: signingConfigs
+
   Line 058:     splits {
                 ^ Unresolved reference: splits
+
   Line 059:         abi {
                     ^ Unresolved reference: abi
+
   Line 060:             isEnable = true
                         ^ Unresolved reference: isEnable
+
   Line 061:             reset()
                         ^ Unresolved reference: reset
+
   Line 062:             include("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
                         ^ Unresolved reference: include
+
   Line 063:             isUniversalApk = true
                         ^ Unresolved reference: isUniversalApk
+
   Line 067:     compileOptions {
                 ^ Unresolved reference: compileOptions
+
   Line 068:         isCoreLibraryDesugaringEnabled = true
                     ^ Unresolved reference: isCoreLibraryDesugaringEnabled
+
   Line 069:         sourceCompatibility = JavaVersion.VERSION_11
                     ^ Unresolved reference: sourceCompatibility
+
   Line 070:         targetCompatibility = JavaVersion.VERSION_11
                     ^ Unresolved reference: targetCompatibility
+
   Line 073:     kotlinOptions {
                 ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
                     public fun BaseAppModuleExtension.kotlinOptions(configure: Action<KotlinJvmOptions>): Unit defined in org.gradle.kotlin.dsl
+
   Line 077:     buildFeatures {
                 ^ Unresolved reference: buildFeatures
+
   Line 078:         compose = true
                     ^ Unresolved reference: compose
+
   Line 079:         buildConfig = true
                     ^ Unresolved reference: buildConfig
+
   Line 082:     packaging {
                 ^ Unresolved reference: packaging
+
   Line 083:         resources {
                     ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
                         public inline operator fun <T : Any, C : NamedDomainObjectContainer<TypeVariable(T)>> TypeVariable(C).invoke(configuration: Action<NamedDomainObjectContainerScope<TypeVariable(T)>>): TypeVariable(C) defined in org.gradle.kotlin.dsl
@@ -822,16 +309,22 @@ Script compilation errors:
                         public operator fun <T> ExtraPropertiesExtension.invoke(initialValue: TypeVariable(T)): InitialValueExtraPropertyDelegateProvider<TypeVariable(T)> defined in org.gradle.kotlin.dsl
                         public operator fun <T> Spec<TypeVariable(T)>.invoke(arg: TypeVariable(T)): Boolean defined in org.gradle.kotlin.dsl
                         public inline operator fun TaskContainer.invoke(configuration: TaskContainerScope.() -> Unit): TaskContainer defined in org.gradle.kotlin.dsl
+
   Line 084:             excludes += "/META-INF/{AL2.0,LGPL2.1}"
                         ^ Unresolved reference: excludes
+
   Line 084:             excludes += "/META-INF/{AL2.0,LGPL2.1}"
                                  ^ Unresolved reference: +=
+
   Line 088:     flavorDimensions += listOf("version")
                 ^ Unresolved reference: flavorDimensions
+
   Line 088:     flavorDimensions += listOf("version")
                                  ^ Unresolved reference: +=
+
   Line 089:     productFlavors {
                 ^ Unresolved reference: productFlavors
+
   Line 090:         create("original") {
                     ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
                         public inline fun <U : TypeVariable(T), T : Any> PolymorphicDomainObjectContainer<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(U)>): TypeVariable(U) defined in org.gradle.kotlin.dsl
@@ -852,9 +345,11 @@ Script compilation errors:
                         public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
                         public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>, configAction: Action<in TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
                         public inline fun <T : Task> BinaryTasksCollection.create(name: String, type: KClass<TypeVariable(T)>, config: Action<in TypeVariable(T)>): Unit defined in org.gradle.kotlin.dsl
+
   Line 091:             dimension = "version"
                         ^ Unresolved reference: dimension
-  Line 094:         create("disguised") {
+
+  Line 093:         create("disguised") {
                     ^ Unresolved reference. None of the following candidates is applicable because of receiver type mismatch: 
                         public inline fun <U : TypeVariable(T), T : Any> PolymorphicDomainObjectContainer<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(U)>): TypeVariable(U) defined in org.gradle.kotlin.dsl
                         public inline fun <U : TypeVariable(T), T : Any> PolymorphicDomainObjectContainer<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(U)>, configuration: Action<in TypeVariable(U)>): TypeVariable(U) defined in org.gradle.kotlin.dsl
@@ -874,178 +369,26 @@ Script compilation errors:
                         public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
                         public inline fun <S : TypeVariable(T), T : Any> ModelMap<TypeVariable(T)>.create(name: String, type: KClass<TypeVariable(S)>, configAction: Action<in TypeVariable(S)>): Unit defined in org.gradle.kotlin.dsl
                         public inline fun <T : Task> BinaryTasksCollection.create(name: String, type: KClass<TypeVariable(T)>, config: Action<in TypeVariable(T)>): Unit defined in org.gradle.kotlin.dsl
-  Line 095:             dimension = "version"
+
+  Line 094:             dimension = "version"
                         ^ Unresolved reference: dimension
-  Line 096:             applicationId = "com.chinablue.tv"
+
+  Line 095:             applicationId = "com.chinablue.tv"
                         ^ Unresolved reference: applicationId
-  Line 100: }
-            ^ Unexpected symbol
-  Line 102: dependencies {
-            ^ Unexpected symbol
-  Line 102: dependencies {
-                         ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                              ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                               ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                                   ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                                    ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                                            ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                                             ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                                                 ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                                                  ^ Unexpected symbol
-  Line 103:     implementation(libs.androidx.core.ktx)
-                                                     ^ Unexpected symbol
-  Line 104:     implementation(libs.androidx.appcompat)
-                ^ Unexpected symbol
-  Line 104:     implementation(libs.androidx.appcompat)
-                              ^ Unexpected symbol
-  Line 104:     implementation(libs.androidx.appcompat)
-                               ^ Unexpected symbol
-  Line 104:     implementation(libs.androidx.appcompat)
-                                   ^ Unexpected symbol
-  Line 104:     implementation(libs.androidx.appcompat)
-                                    ^ Unexpected symbol
-  Line 104:     implementation(libs.androidx.appcompat)
-                                            ^ Unexpected symbol
-  Line 104:     implementation(libs.androidx.appcompat)
-                                             ^ Unexpected symbol
-  Line 104:     implementation(libs.androidx.appcompat)
-                                                      ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                              ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                               ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                       ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                        ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                            ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                             ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                                     ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                                      ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                                             ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                                              ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                                                 ^ Unexpected symbol
-  Line 105:     implementation(platform(libs.androidx.compose.bom))
-                                                                  ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                              ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                               ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                                   ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                                    ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                                            ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                                             ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                                               ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                                                ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                                                       ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                                                        ^ Unexpected symbol
-  Line 106:     implementation(libs.androidx.ui.tooling.preview)
-                                                               ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                              ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                               ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                                   ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                                    ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                                            ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                                             ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                                                    ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                                                     ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                                                               ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                                                                ^ Unexpected symbol
-  Line 107:     implementation(libs.androidx.compose.foundation.base)
-                                                                    ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                              ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                               ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                                   ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                                    ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                                            ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                                             ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                                               ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                                                ^ Unexpected symbol
-  Line 108:     implementation(libs.androidx.tv.material)
-                                                        ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                              ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                               ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                                   ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                                    ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                                            ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                                             ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                                                      ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                                                       ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                                                              ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                                                               ^ Unexpected symbol
-  Line 109:     implementation(libs.androidx.lifecycle.runtime.ktx)
-                                                                  ^ Unexpected symbol
-  Line 110:     implementation(libs.androidx.lifecycle.viewmodel.compose)
-                ^ Unexpected symbol
-  Line 110:     implementation(libs.androidx.lifecycle.viewmodel.compose)
-                              ^ Unexpected symbol
-  Line 110:     implementation(libs.androidx.lifecycle.viewmodel.compose)
-                               ^ Unexpected symbol
-  Line 110:     implementation(libs.androidx.lifecycle.viewmodel.compose)
-                                   ^ Unexpected symbol
-  Line 110:     implementation(libs.androidx.lifecycle.viewmodel.compose)
-                                    ^ Unexpected symbol
+
+  Line 100:         implementation(libs.androidx.core.ktx),
+                                                          ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+  Line 101:         implementation(libs.androidx.appcompat),
+                                                           ^ Unexpected tokens (use ';' to separate expressions on the same line)
+
+53 errors
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 35s
 Error: Process completed with exit code 1.

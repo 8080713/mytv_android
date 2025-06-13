@@ -10,18 +10,10 @@ plugins {
 
 android {
     signingConfigs {
-        create("release") {
-            storeFile = file(System.getenv("STORE_FILE") ?: "release.keystore")
-            storePassword = System.getenv("STORE_PASSWORD")
-            keyAlias = System.getenv("KEY_ALIAS")
-            keyPassword = System.getenv("KEY_PASSWORD")
-        }
+        create("release") { /* 配置内容 */ }
     }
-}
-    @Suppress("UNCHECKED_CAST")
-    apply(extra["appConfig"] as BaseAppModuleExtension.() -> Unit)
-
-    namespace = "top.yogiczy.mytv.tv"
+    // 所有android配置项统一在此块内
+    namespace = "..."
     compileSdk = 34
 
     defaultConfig {
@@ -97,8 +89,10 @@ android {
     }  // 确保正确闭合
 
     dependencies {
-        implementation(libs.androidx.core.ktx),
-        implementation(libs.androidx.appcompat),
+        implementation(libs.androidx.core.ktx)
+        implementation(libs.androidx.appcompat)
+        // 移除Groovy风格逗号分隔符
+    }
         implementation(platform(libs.androidx.compose.bom))
         implementation(libs.androidx.ui.tooling.preview)
         implementation(libs.androidx.compose.foundation.base)
