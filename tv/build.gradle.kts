@@ -90,73 +90,70 @@ android {
         create("original") {
             dimension = "version"
         }
-
         create("disguised") {
             dimension = "version"
             applicationId = "com.chinablue.tv"
         }
+    }  // 确保正确闭合
+
+    dependencies {
+        implementation(libs.androidx.core.ktx),
+        implementation(libs.androidx.appcompat),
+        implementation(platform(libs.androidx.compose.bom))
+        implementation(libs.androidx.ui.tooling.preview)
+        implementation(libs.androidx.compose.foundation.base)
+        implementation(libs.androidx.tv.material)
+        implementation(libs.androidx.lifecycle.runtime.ktx)
+        implementation(libs.androidx.lifecycle.viewmodel.compose)
+        implementation(libs.androidx.activity.compose)
+        implementation(libs.androidx.navigation.compose)
+        implementation(libs.android.material)
+        implementation(libs.kotlinx.serialization)
+        implementation(libs.kotlinx.collections.immutable)
+        implementation(libs.androidx.material.icons.extended)
+
+        // 播放器
+        val mediaSettingsFile = file("../../media/core_settings.gradle")
+        if (mediaSettingsFile.exists()) {
+            implementation(project(":media3:lib-exoplayer"))
+            implementation(project(":media3:lib-exoplayer-hls"))
+            implementation(project(":media3:lib-exoplayer-rtsp"))
+            implementation(project(":media3:lib-exoplayer-dash"))
+            implementation(project(":media3:lib-ui"))
+        } else {
+            implementation(libs.androidx.media3.exoplayer)
+            implementation(libs.androidx.media3.exoplayer.hls)
+            implementation(libs.androidx.media3.exoplayer.rtsp)
+            implementation(libs.androidx.media3.exoplayer.dash)
+            implementation(libs.androidx.media3.ui)
+        }
+        implementation(libs.androidx.media3.common)
+        implementation(libs.androidx.media3.datasource.rtmp)
+        implementation(libs.androidx.media3.exoplayer.smoothstreaming)
+
+        // 二维码
+        implementation(libs.qrose)
+
+        implementation(libs.coil.compose)
+        implementation(libs.coil.svg)
+
+        implementation(libs.okhttp)
+        implementation(libs.androidasync)
+
+        implementation(libs.tinypinyin)
+
+        implementation(project(":core:data"))
+        implementation(project(":core:designsystem"))
+        implementation(project(":core:util"))
+        implementation(project(":ijkplayer-java"))
+        implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+        implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+        androidTestImplementation(platform(libs.androidx.compose.bom))
+        androidTestImplementation(libs.androidx.ui.test.junit4)
+        debugImplementation(libs.androidx.ui.tooling)
+        debugImplementation(libs.androidx.ui.test.manifest)
+        coreLibraryDesugaring(libs.desugar.jdk.libs)
     }
-
-}
-
-dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.compose.foundation.base)
-    implementation(libs.androidx.tv.material)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.navigation.compose)
-    implementation(libs.android.material)
-    implementation(libs.kotlinx.serialization)
-    implementation(libs.kotlinx.collections.immutable)
-    implementation(libs.androidx.material.icons.extended)
-
-    // 播放器
-    val mediaSettingsFile = file("../../media/core_settings.gradle")
-    if (mediaSettingsFile.exists()) {
-        implementation(project(":media3:lib-exoplayer"))
-        implementation(project(":media3:lib-exoplayer-hls"))
-        implementation(project(":media3:lib-exoplayer-rtsp"))
-        implementation(project(":media3:lib-exoplayer-dash"))
-        implementation(project(":media3:lib-ui"))
-    } else {
-        implementation(libs.androidx.media3.exoplayer)
-        implementation(libs.androidx.media3.exoplayer.hls)
-        implementation(libs.androidx.media3.exoplayer.rtsp)
-        implementation(libs.androidx.media3.exoplayer.dash)
-        implementation(libs.androidx.media3.ui)
-    }
-    implementation(libs.androidx.media3.common)
-    implementation(libs.androidx.media3.datasource.rtmp)
-    implementation(libs.androidx.media3.exoplayer.smoothstreaming)
-
-    // 二维码
-    implementation(libs.qrose)
-
-    implementation(libs.coil.compose)
-    implementation(libs.coil.svg)
-
-    implementation(libs.okhttp)
-    implementation(libs.androidasync)
-
-    implementation(libs.tinypinyin)
-
-    implementation(project(":core:data"))
-    implementation(project(":core:designsystem"))
-    implementation(project(":core:util"))
-    implementation(project(":ijkplayer-java"))
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.test.manifest)
-    coreLibraryDesugaring(libs.desugar.jdk.libs)
-}
 
 
 fun getProperty(key: String): String? {
